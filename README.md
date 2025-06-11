@@ -12,6 +12,7 @@ Antes de iniciar, asegúrate de tener instalado lo siguiente:
 - **npm** (Node Package Manager)  
 - **Ionic CLI**  
 - **Angular CLI**
+- **Git Bash**
 
 ### Instalación de herramientas:
 
@@ -31,7 +32,7 @@ cd AppRincones
 # Crear estructura de carpetas para páginas
 mkdir -p src/app/pages/login
 
-# Generar las páginas necesarias
+### Generar las páginas necesarias
 ionic generate page pages/login
 ionic generate page pages/register
 ionic generate page pages/home
@@ -50,24 +51,29 @@ ionic serve
 # Esta es la estructura base de la app
 src/
 ├── app/
-│   ├── pages/
-│   │   ├── login/
-│   │   ├── register/
-│   │   ├── home/
-│   │   ├── search/
-│   │   ├── promotions/
-│   │   ├── profile/
-│   │   ├── restaurant-detail/
-│   │   ├── menu/
-│   │   ├── reservations/
-│   │   ├── my-data/
-│   │   └── confirm-reservation/
-│   ├── app-routing.module.ts
-│   └── app.module.ts
-├── assets/
-│   └── icon/
-└── index.html
-
+│   ├── pages/              → Carpeta que contiene todas las vistas (páginas) del proyecto
+│   │   ├── home/           → Página de inicio
+│   │   ├── login/          → Página de inicio de sesión
+│   │   ├── promo/          → Página de promociones
+│   │   ├── register/       → Página de registro de usuarios
+│   │   ├── reserva/        → Página para visualizar las reservas (standalone)
+│   │   └── tabs/           → Contenedor principal con navegación por pestañas
+│   │       ├── tabs-routing.module.ts → Define rutas internas de las pestañas
+│   │       ├── tabs.module.ts         → Módulo del componente tabs (si no es standalone)
+│   │       └── tabs.page.ts/html/scss → Página que define las tabs de navegación
+│
+│   ├── app-routing.module.ts → Ruteador principal de la app (enlaza todas las páginas)
+│   ├── app.component.ts      → Componente raíz que inicia la aplicación
+│   ├── app.module.ts         → Módulo principal del proyecto
+│
+├── assets/                   → Carpeta de imágenes, íconos y recursos estáticos
+│   ├── icon/                 → Íconos de app
+│   └── img/                  → Imágenes de fondo y logos
+│
+├── theme/                    → Variables globales SCSS (colores, fuentes, etc.)
+├── global.scss               → Estilos globales de la app
+├── index.html                → Archivo HTML base
+└── main.ts                   → Punto de entrada de la aplicación
 ## Pruebas en desarrollo
 Ejecuta ionic serve para correr la app en el navegador.
 
