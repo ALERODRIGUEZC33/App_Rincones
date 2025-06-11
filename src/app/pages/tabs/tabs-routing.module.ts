@@ -15,6 +15,10 @@ const routes: Routes = [
         path: 'reserva',
         loadChildren: () => import('../reserva/reserva.module').then(m => m.ReservaPageModule),
       },
+       {
+        path: 'promo',
+        loadChildren: () => import('../promo/promo.module').then(m => m.PromoPageModule),
+      },
       {
         path: '',
         redirectTo: 'home',

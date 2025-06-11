@@ -1,0 +1,58 @@
+<ion-content>
+  <div class="background-image"></div>
+
+  <section class="banner">
+    <h2>¡Promociones exclusivas!</h2>
+  </section>
+
+  <!-- Ofertas del Día -->
+  <section class="promo-section">
+    <div class="section-header">
+      <h3>Ofertas del día</h3>
+      <a class="ver-todas" href="#">Ver todas</a>
+    </div>
+    <div class="promo-list">
+      <!-- Aquí se reutilizan las promos existentes -->
+      <div class="promo-item" *ngFor="let p of ['Parrilla', 'Postre', 'Saludable']; let i = index">
+        <div class="circle-img">
+          <img [src]="'/assets/img/' + p + '.png'" [alt]="p">
+        </div>
+        <div class="promo-info">
+          <p>{{ p === 'Parrilla' ? 'Parrilla Familiar' : p === 'Postre' ? 'Postres Premium' : 'Menú Light' }}</p>
+          <span class="tag" [ngClass]="{
+            'tag-descuento': p !== 'Postre',
+            'tag-2x1': p === 'Postre'
+          }">
+            {{ p === 'Parrilla' ? '30% OFF' : p === 'Postre' ? '2x1' : '15% OFF' }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tipos de comida -->
+  <section class="promo-section">
+    <div class="section-header">
+      <h3>Explora por tipo de comida</h3>
+    </div>
+    <div class="category-list">
+      <div class="category-item" *ngFor="let tipo of ['Pizza', 'Sushi', 'Coctel', 'Hamburguesa', 'Asiatica']">
+        <img [src]="'/assets/img/' + tipo + '.png'" [alt]="tipo">
+        <p>{{ tipo }}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Restaurantes recomendados -->
+  <section class="promo-section">
+    <div class="section-header">
+      <h3>Restaurantes recomendados</h3>
+    </div>
+    <div class="restaurant-list">
+      <div class="restaurant-card" *ngFor="let i of [1, 2, 3, 4, 5]">
+        <img [src]="'/assets/img/Restaurante' + i + '.png'" alt="Restaurante {{ i }}">
+        <p>Restaurante {{ i }}</p>
+      </div>
+    </div>
+  </section>
+</ion-content>
