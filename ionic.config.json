@@ -1,0 +1,7 @@
+{
+  "name": "AppRincones",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

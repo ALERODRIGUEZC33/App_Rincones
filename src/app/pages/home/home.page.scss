@@ -1,0 +1,81 @@
+.background-image {
+  background-image: url('/assets/img/FondoPantallaInicial.png');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.banner {
+  text-align: center;
+  margin: 20px;
+  font-size: 1.2rem;
+  color: #fdfbfb;
+}
+
+.search-bar {
+  margin: 0 20px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.category-slider {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px 0;
+}
+
+.category-row {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70px;
+}
+
+.category img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.section {
+  margin: 20px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  font-weight: bold;
+}
+
+.restaurant-list {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+}
+
+.restaurant-img {
+  width: 400px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 15px;
+}

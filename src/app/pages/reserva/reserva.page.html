@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-title>Mis Reservas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="reserva-content">
+  <ion-card *ngFor="let reserva of reservas">
+    <ion-card-header>
+      <ion-card-title>{{ reserva.restaurante }}</ion-card-title>
+      <ion-card-subtitle>{{ reserva.fechaHora | date:'fullDate' }} - {{ reserva.fechaHora | date:'shortTime' }}</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p><strong>Nombre:</strong> {{ reserva.nombre }}</p>
+      <p><strong>Correo:</strong> {{ reserva.correo }}</p>
+      <p><strong>Teléfono:</strong> {{ reserva.telefono }}</p>
+      <ion-button color="medium" expand="block" (click)="cancelarReserva(reserva)">
+        Cancelar Reserva
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+

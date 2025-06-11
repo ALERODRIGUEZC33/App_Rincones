@@ -1,0 +1,50 @@
+<ion-content fullscreen>
+
+  <div class="background-image"></div>
+
+  <div class="login-wrapper">
+
+    <div class="logo-container">
+      <img src="/assets/img/LogoRincones.png" alt="Logo Rincones" />
+    </div>
+
+    <form>
+
+      <ion-item>
+        <ion-input placeholder="Nombre" type="text" fill="outline"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input placeholder="Correo Electrónico" type="email" fill="outline"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input placeholder="Contraseña" type="password" fill="outline"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input placeholder="Confirmar Contraseña" type="password" fill="outline"></ion-input>
+      </ion-item>
+
+      <ion-button expand="block" color="success" class="login-button">
+        Registrarse
+      </ion-button>
+
+      <ion-button expand="block" class="custom-google-button">
+        <ion-icon name="logo-google" slot="start"></ion-icon>
+        Continuar con Google
+      </ion-button>
+
+      <div class="description">
+        ¿Tiene una cuenta? Inicie sesión <br />
+        haciendo clic en el botón de abajo.
+      </div>
+
+      <ion-button expand="block" fill="outline" color="dark" class="login-button" routerLink="/pages/login">
+        Iniciar sesión
+      </ion-button>
+
+    </form>
+
+  </div>
+</ion-content>
