@@ -1,0 +1,74 @@
+.restaurant-card {
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+}
+
+.image-container {
+  text-align: center;
+  padding-top: 16px;
+
+  .restaurant-image {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.restaurant-details {
+  padding: 0 16px;
+
+  ion-card-title {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    text-align: center;
+  }
+
+  ion-card-subtitle {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    text-align: center;
+  }
+
+  ion-card-content p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+}
+
+.menu-gallery {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  margin: 16px 0;
+
+  .menu-item {
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.rating {
+  text-align: center;
+  margin-bottom: 12px;
+
+  ion-icon {
+    color: #f1c40f;
+    font-size: 20px;
+  }
+
+  .score {
+    margin-left: 8px;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+}

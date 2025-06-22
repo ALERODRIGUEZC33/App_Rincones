@@ -1,0 +1,50 @@
+<ion-content>
+  <ion-card class="restaurant-card">
+    <!-- Imagen centrada -->
+    <div class="image-container">
+      <img src="/assets/img/StoriaDamore.png" class="restaurant-image" />
+    </div>
+
+    <!-- Detalles debajo de la imagen -->
+    <div class="restaurant-details">
+      <ion-card-header>
+        <ion-card-title>Hy Storia D'Amore</ion-card-title>
+        <ion-card-subtitle>Pizza, Pasta y más</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <p>
+          En nuestro restaurante, celebramos la rica herencia culinaria de Italia,
+          transportando a nuestros comensales a un viaje gastronómico lleno de sabores
+          auténticos y tradiciones milenarias. Cada plato ha sido cuidadosamente elaborado
+          con ingredientes de la más alta calidad, preservando las recetas ancestrales,
+          pero con un toque de creatividad y elegancia que eleva la experiencia.
+        </p>
+      </ion-card-content>
+    </div>
+
+    <!-- Galería de platos -->
+    <ion-card-content>
+      <div class="menu-gallery">
+        <img src="/assets/img/Plato1.png" class="menu-item" alt="Plato 1" />
+        <img src="/assets/img/Plato2.png" class="menu-item" alt="Plato 2" />
+        <img src="/assets/img/Plato3.png" class="menu-item" alt="Plato 3" />
+        <img src="/assets/img/Plato4.png" class="menu-item" alt="Plato 4" />
+      </div>
+
+      <!-- Puntuación -->
+      <div class="rating">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star-half"></ion-icon>
+        <span class="score">4.5 / 5</span>
+      </div>
+
+      <!-- Botón de reservar -->
+      <ion-button expand="block" color="success" [routerLink]="['/tabs/detalleReserva']">
+        Reservar
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -23,26 +23,33 @@ interface Reserva {
  
 })
 export class ReservaPage {
-  reservas: Reserva[] = [
-    {
-      id: 1,
-      nombre: 'Juan Pérez',
-      correo: 'juan@example.com',
-      telefono: '123456789',
-      fechaHora: new Date('2025-06-15T12:30:00'),
-      restaurante: 'Japan Ramen'
-    },
-    {
-      id: 2,
-      nombre: 'Ana Torres',
-      correo: 'ana@example.com',
-      telefono: '987654321',
-      fechaHora: new Date('2025-06-20T14:30:00'),
-      restaurante: 'Macondo'
-    }
-  ];
+  reservas: Reserva[] = [];
+
+   ionViewWillEnter() {
+    const datos = localStorage.getItem('reservas');
+    this.reservas = datos ? JSON.parse(datos) : [];
+  }
 
   cancelarReserva(reserva: Reserva) {
     this.reservas = this.reservas.filter(r => r.id !== reserva.id);
+    localStorage.setItem('reservas', JSON.stringify(this.reservas));
   }
+  
+  formatearFecha(fecha: Date): string {
+    const date = new Date(fecha);
+
+    const meses = [
+      'enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
+      'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'
+    ];
+
+    const dia = date.getDate().toString().padStart(2, '0');
+    const mes = meses[date.getMonth()];
+    const anio = date.getFullYear();
+    const hora = date.getHours().toString().padStart(2, '0');
+    const minutos = date.getMinutes().toString().padStart(2, '0');
+
+    return `${dia} de ${mes} de ${anio}, ${hora}:${minutos}`;
+  }
+
 }

@@ -1,0 +1,14 @@
+<ion-content class="mejores-page">
+  <!-- Fondo -->
+  <div class="background-overlay"></div>
+
+  <div class="restaurante-container" *ngFor="let restaurante of restaurantes">
+    <div class="restaurante-box">
+      <img [src]="restaurante.imagen" alt="{{ restaurante.nombre }}" class="restaurante-img" />
+      <div class="restaurante-info">
+        <h2>{{ restaurante.nombre }}</h2>
+        <p>{{ restaurante.descripcion }}</p>
+      </div>
+    </div>
+  </div>
+</ion-content>
