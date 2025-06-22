@@ -1,85 +1,59 @@
-# App Rincones
 
-Aplicación móvil desarrollada con **Ionic + Angular**, que permite a los usuarios explorar restaurantes, ver menús, promociones y realizar reservas.
+# Rincones: Descubre los rincones del sabor local
+
+## 📱 Proyecto de Programación Móvil  
+**Universidad Politécnico Grancolombiano**  
+ 
 
 ---
 
-## 🚀 Herramientas necesarias
+## 🧑‍💻 Integrantes
 
-Antes de iniciar, asegúrate de tener instalado lo siguiente:
+| Apellidos           | Nombres              | Correo electrónico                   | Documento de identidad |
+|---------------------|----------------------|--------------------------------------|------------------------|
+| Rosas Cardoso       | Evelyn Valentina     | evrosas@poligran.edu.co              | 1023371366             |
+| Quintero Lozano     | Guillermo Felipe     | gfquintero@poligran.edu.co           | 1152206340             |
+| Rodríguez Camacho   | Yesika Alexandra     | yalexrodriguez@poligran.edu.co       | 1020836778              |
+| Ríos López          | Stiven Alejandro     | sarios@poligran.edu.co               | 100265695             |
+| Guzmán Guzmán       | Cristian Ricardo     | crguzman3@poligran.edu.co            | 1110553903                       |
 
+---
+
+## 📝 Sinopsis del proyecto
+
+**Rincones** es una aplicación móvil desarrollada con el objetivo de conectar a comensales con restaurantes independientes, facilitando el descubrimiento de opciones gastronómicas locales.
+
+A través de una interfaz amigable e intuitiva, los usuarios pueden:
+- Buscar restaurantes por ciudad.
+- Explorar menús digitales.
+- Acceder a promociones exclusivas.
+- Realizar reservas en línea.
+
+La aplicación busca apoyar la economía local, brindando visibilidad a pequeños negocios frente a grandes cadenas comerciales. Además, está diseñada para ofrecer una experiencia fluida, rápida y segura, sin solicitar permisos invasivos.  
+**Rincones** no solo es una guía gastronómica, sino una invitación a redescubrir la riqueza culinaria de cada comunidad.
+
+---
+
+## 🔗 Enlaces importantes
+
+- 🔧 **Repositorio GitHub:** (https://github.com/ALERODRIGUEZC33/App_Rincones)
+- 🧩 **Mockup del proyecto:** [Ver Mockup en Balsamiq](https://balsamiq.cloud/s54nwsr/przwxe6)
+- 🎥 **Video demostrativo (opcional):** (Pendiente)
+
+---
+
+## 📌 Observaciones
+
+- Este proyecto fue realizado como parte de la asignatura de **Programación Móvil**.
+- Todos los integrantes contribuyeron activamente en el desarrollo de la app y en la elaboración de los recursos multimedia.
+
+## 🚀 Herramientas necesarias para su desarrollo
+
+Para la creación y desarrollo de la App se requirio tener instalado lo siguiente:
 - **Node.js** (versión recomendada: 18.x o superior)  
 - **npm** (Node Package Manager)  
 - **Ionic CLI**  
 - **Angular CLI**
 - **Git Bash**
 
-### Instalación de herramientas:
 
-```bash
-# Instalar Angular CLI
-npm install -g @angular/cli
-
-# Instalar Ionic CLI
-npm install -g @ionic/cli
-
-# Crear un nuevo proyecto Ionic con Angular
-ionic start AppRincones blank --type=angular
-
-# Acceder al proyecto
-cd AppRincones
-
-# Crear estructura de carpetas para páginas
-mkdir -p src/app/pages/login
-
-### Generar las páginas necesarias
-ionic generate page pages/login
-ionic generate page pages/register
-ionic generate page pages/home
-ionic generate page pages/search
-ionic generate page pages/promotions
-ionic generate page pages/profile
-ionic generate page pages/restaurant-detail
-ionic generate page pages/menu
-ionic generate page pages/reservations
-ionic generate page pages/my-data
-ionic generate page pages/confirm-reservation
-
-# Ejecutar la aplicación en entorno local
-ionic serve
-
-# Esta es la estructura base de la app
-src/
-├── app/
-│   ├── pages/              → Carpeta que contiene todas las vistas (páginas) del proyecto
-│   │   ├── home/           → Página de inicio
-│   │   ├── login/          → Página de inicio de sesión
-│   │   ├── promo/          → Página de promociones
-│   │   ├── register/       → Página de registro de usuarios
-│   │   ├── reserva/        → Página para visualizar las reservas (standalone)
-│   │   └── tabs/           → Contenedor principal con navegación por pestañas
-│   │       ├── tabs-routing.module.ts → Define rutas internas de las pestañas
-│   │       ├── tabs.module.ts         → Módulo del componente tabs (si no es standalone)
-│   │       └── tabs.page.ts/html/scss → Página que define las tabs de navegación
-│
-│   ├── app-routing.module.ts → Ruteador principal de la app (enlaza todas las páginas)
-│   ├── app.component.ts      → Componente raíz que inicia la aplicación
-│   ├── app.module.ts         → Módulo principal del proyecto
-│
-├── assets/                   → Carpeta de imágenes, íconos y recursos estáticos
-│   ├── icon/                 → Íconos de app
-│   └── img/                  → Imágenes de fondo y logos
-│
-├── theme/                    → Variables globales SCSS (colores, fuentes, etc.)
-├── global.scss               → Estilos globales de la app
-├── index.html                → Archivo HTML base
-└── main.ts                   → Punto de entrada de la aplicación
-## Pruebas en desarrollo
-Ejecuta ionic serve para correr la app en el navegador.
-
-Navega a http://localhost:8100 para ver la aplicación.
-
-Verifica rutas como /pages/login, /pages/register, etc.
-
-App Rincones — Proyecto de desarrollo móvil educativo.
-Politecnico Grancolombiano / Programación Móvil – 2025.
