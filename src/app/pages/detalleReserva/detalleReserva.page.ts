@@ -58,7 +58,7 @@ export class DetalleReservaPage {
       correo: this.correo,
       telefono: this.telefono,
       fechaHora: new Date(this.fechaHora),
-      restaurante: 'Historia de amore'
+      restaurante: 'Hy Storia D"amore'
     };
 
     const reservasGuardadas = JSON.parse(localStorage.getItem('reservas') || '[]');
