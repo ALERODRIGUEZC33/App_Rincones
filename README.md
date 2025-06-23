@@ -38,7 +38,7 @@ La aplicación busca apoyar la economía local, brindando visibilidad a pequeño
 
 - 🔧 **Repositorio GitHub:** (https://github.com/ALERODRIGUEZC33/App_Rincones)
 - 🧩 **Mockup del proyecto:** [Ver Mockup en Balsamiq](https://balsamiq.cloud/s54nwsr/przwxe6)
-- 🎥 **Video demostrativo (opcional):** (Pendiente)
+- 🎥 **Video demostrativo: (https://youtu.be/UvrrLqvLgvI)
 
 ---
 
